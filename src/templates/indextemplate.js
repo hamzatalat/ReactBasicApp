@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import calculator from '../calculator'
 import table from '../table'
 import fileDialog from '../fileDialog'
+import '../index.css';
 
 const IndexTemplate = () => {  
 return(<h1>

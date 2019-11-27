@@ -2,6 +2,7 @@ import React from 'react'
 import {  BrowserRouter as Router } from 'react-router-dom'
 import CalculatorTemplate from './templates/calculatortemplate'
 import OutputScreen from './templates/Outputscreen'
+import './index.css';
 
 class calculator extends React.Component {
 	constructor() { 

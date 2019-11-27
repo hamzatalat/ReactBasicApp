@@ -1,5 +1,6 @@
 import React from 'react'
 import OutputScreen from './Outputscreen'
+import '../index.css';
 
 const Button = (props) => { 
   return ( 
@@ -7,6 +8,7 @@ const Button = (props) => {
       type="button"
       value={props.label}
       onClick={props.onClick}
+      class = "button"
     /> 
   ); 
 } 
@@ -21,11 +23,21 @@ return(
 	<div className="frame">
     <div className="mainCalc">
     <OutputScreen className="screen" question= {props.questions} answer= {props.answers} onNameChange={props.onNameChanges}/>  
-    <div className="button-row"> 	
-      <Button label={'Clear'} onClick={props.click}/> 
-      <Button label={'Delete'} onClick={props.click}/> 
-      <Button label={'.'} onClick={props.click}/> 
-      <Button label={'/'} onClick={props.click}/> 
+    <div className="button-row">
+
+        <input 
+      type="button"
+      label={'Clear'}
+      value={'Clear'}
+      onClick={props.click}
+      class = "button2"/> 
+      
+          <input 
+          type="button"
+          label={'Delete'}
+          value={'Delete'}
+          onClick={props.click}
+          class = "button2"/> 
     </div> 
     <div className="button-row"> 
       <Button label={'7'} onClick={props.click}/> 
@@ -46,8 +58,10 @@ return(
       <Button label={'+'} onClick={props.click}/> 
     </div> 
     <div className="button-row"> 
+      <Button label={'.'} onClick={props.click}/>
       <Button label={'0'} onClick={props.click}/> 
-      <Button label={'='} onClick={props.click}/> 
+      <Button label={'='} onClick={props.click}/>
+      <Button label={'/'} onClick={props.click}/>  
     </div> 
     </div> 
     </div> 
