@@ -2,11 +2,11 @@ import React from 'react';
 
 const TableTemplate = (props) => { 
  return (
-         <div>
+         <div class="table">
             <h1 id='title'>React Dynamic Table</h1>
              <label>
 		          Input your number :
-		          <input type="text" value={props.values} onChange={props.onChanges} />
+		          <input type="text" value={props.values} onChange={props.onChanges} className="screen-row"/>
 		        </label>
             <table id='students'>
                <tbody>
