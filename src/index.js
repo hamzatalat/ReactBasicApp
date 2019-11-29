@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom';
 import calculator from './calculator'
 import table from './table'
 import fileDialog from './fileDialog'
+import Graph from './graph'
 import IndexTemplate from './templates/indextemplate'
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
@@ -26,6 +27,7 @@ const routing = (
       <Route path="/calculator" component={calculator} />
       <Route path="/table" component={table} />
       <Route path="/fileDialog" component={fileDialog} />
+      <Route path="/graph" component={Graph} />
       <Route path="/combo" component={table} />
     </div>
   </Router>

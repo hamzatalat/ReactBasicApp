@@ -4,7 +4,8 @@ import '../index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Menu from 'react-animenu';
-import Burger from './burger'
+import Burger from './burger';
+import Footer from '../footer'
 
 const Buttons = (props) => { 
   return ( 
@@ -24,6 +25,7 @@ const Buttons = (props) => {
 
 const CalculatorTemplate = (props) => {
 return(
+  
 	<div className="frame">
     <div className="mainCalc">
     <Burger/>
@@ -67,7 +69,8 @@ return(
       <Buttons label={'/'} onClick={props.click}/>  
     </div> 
     </div> 
-    </div> 
+    <Footer/>
+    </div>
     );
 
 

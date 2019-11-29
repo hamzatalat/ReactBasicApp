@@ -20,7 +20,7 @@ return(
 					<br/>
 					<Link to="/fileDialog">P3</Link>
 					<br/>
-					<li>P4</li>
+					<Link to="/graph">P4</Link>
 				</ul>
 		
 		   </h1>
