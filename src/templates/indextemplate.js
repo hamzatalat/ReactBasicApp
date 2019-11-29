@@ -1,13 +1,18 @@
-import React from 'react';
+
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import ReactDOM from 'react-dom';
 import calculator from '../calculator'
 import table from '../table'
 import fileDialog from '../fileDialog'
-import '../index.css';
-
+import React from 'react';
+import Menu from 'react-animenu';
+import Burger from './burger';
+import Footer from '../footer'
 const IndexTemplate = () => {  
-return(<h1>
+return(
+<div>
+<Burger/>
+	<h1>
 				<ul>
 					<Link to="/calculator">P1</Link>
 					<br/>
@@ -17,7 +22,11 @@ return(<h1>
 					<br/>
 					<li>P4</li>
 				</ul>
-		   </h1>);
+		
+		   </h1>
+		   <Footer/>
+		   </div>
+		   );
 		}
 
 export default IndexTemplate;

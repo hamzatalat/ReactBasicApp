@@ -1,8 +1,12 @@
 import React from 'react'
 import OutputScreen from './Outputscreen'
 import '../index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
+import Menu from 'react-animenu';
+import Burger from './burger'
 
-const Button = (props) => { 
+const Buttons = (props) => { 
   return ( 
     <input 
       type="button"
@@ -22,46 +26,45 @@ const CalculatorTemplate = (props) => {
 return(
 	<div className="frame">
     <div className="mainCalc">
+    <Burger/>
     <OutputScreen className="screen" question= {props.questions} answer= {props.answers} onNameChange={props.onNameChanges}/>  
     <div className="button-row">
 
-        <input 
-      type="button"
+        <Button variant="outline-primary"
       label={'Clear'}
       value={'Clear'}
       onClick={props.click}
-      class = "button2"/> 
+      >Clear</Button> 
       
-          <input 
-          type="button"
+           <Button variant="outline-primary"
           label={'Delete'}
           value={'Delete'}
           onClick={props.click}
-          class = "button2"/> 
+          > Delete</Button>
     </div> 
     <div className="button-row"> 
-      <Button label={'7'} onClick={props.click}/> 
-      <Button label={'8'} onClick={props.click}/> 
-      <Button label={'9'} onClick={props.click}/> 
-      <Button label={'*'} onClick={props.click}/> 
+      <Buttons label={'7'} onClick={props.click}/> 
+      <Buttons label={'8'} onClick={props.click}/> 
+      <Buttons label={'9'} onClick={props.click}/> 
+      <Buttons label={'*'} onClick={props.click}/> 
     </div> 
     <div className="button-row"> 
-      <Button label={'4'} onClick={props.click}/> 
-      <Button label={'5'} onClick={props.click}/> 
-      <Button label={'6'} onClick={props.click}/> 
-      <Button label={'-'} onClick={props.click}/> 
+      <Buttons label={'4'} onClick={props.click}/> 
+      <Buttons label={'5'} onClick={props.click}/> 
+      <Buttons label={'6'} onClick={props.click}/> 
+      <Buttons label={'-'} onClick={props.click}/> 
     </div> 
     <div className="button-row"> 
-      <Button label={'1'} onClick={props.click}/>
-      <Button label={'2'} onClick={props.click}/> 
-      <Button label={'3'} onClick={props.click}/> 
-      <Button label={'+'} onClick={props.click}/> 
+      <Buttons label={'1'} onClick={props.click}/>
+      <Buttons label={'2'} onClick={props.click}/> 
+      <Buttons label={'3'} onClick={props.click}/> 
+      <Buttons label={'+'} onClick={props.click}/> 
     </div> 
     <div className="button-row"> 
-      <Button label={'.'} onClick={props.click}/>
-      <Button label={'0'} onClick={props.click}/> 
-      <Button label={'='} onClick={props.click}/>
-      <Button label={'/'} onClick={props.click}/>  
+      <Buttons label={'.'} onClick={props.click}/>
+      <Buttons label={'0'} onClick={props.click}/> 
+      <Buttons label={'='} onClick={props.click}/>
+      <Buttons label={'/'} onClick={props.click}/>  
     </div> 
     </div> 
     </div> 

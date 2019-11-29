@@ -12,6 +12,7 @@ class calculator extends React.Component {
       answer: ''
     } 
     this.handleClick = this.handleClick.bind(this); 
+    this.onChange = this.onChange.bind(this);
   }
 handleClick(event) { 
  
@@ -59,7 +60,6 @@ handleClick(event) {
         console.log(this.state.question);
         break; 
     } 
- 
   default: { 
       this.setState({ question: this.state.question += value})
       console.log(this.state.question);
@@ -68,6 +68,14 @@ handleClick(event) {
     } 
   } 
 } 
+
+onChange(e)
+{
+  
+}
+
+
+
 
 	render(){
 	return(

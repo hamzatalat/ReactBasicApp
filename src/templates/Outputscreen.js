@@ -1,5 +1,5 @@
 import React from 'react' 
-
+import Burger from './burger';
 var OutputScreen = (props) => { 
   return ( 
     <div>
@@ -8,11 +8,11 @@ var OutputScreen = (props) => {
     </div> 
  
 
-
     
-      <input type="text" value={props.question} className="screen-row"/>
+    
+      <input type="text" value={props.question} className="screen-row" onChange={props.onNameChange}/>
       <br/>
-      <input type="text" value={props.answer} className="screen-row" />
+      <input type="text" value={props.answer} className="screen-row" onChange={props.onNameChange} />
      
     </div>
   ); 

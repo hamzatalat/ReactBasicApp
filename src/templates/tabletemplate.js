@@ -1,8 +1,10 @@
 import React from 'react';
-
+import Burger from './burger';
+import Footer from '../footer';
 const TableTemplate = (props) => { 
  return (
          <div class="table">
+         <Burger/>
             <h1 id='title'>React Dynamic Table</h1>
              <label>
 		          Input your number :
@@ -14,6 +16,7 @@ const TableTemplate = (props) => {
                   {props.renderTableDatas}
                </tbody>
             </table>
+            <Footer/>
          </div>
       )
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import calculator from './calculator'
 import table from './table'
@@ -7,9 +6,14 @@ import IndexTemplate from './templates/indextemplate'
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
 
+import React, { useState } from 'react';
+
+
 class Fea extends React.Component {
 	render(){
-	return(<IndexTemplate />);
+	return(<div>
+    <IndexTemplate/>
+    </div>);
 }
 }
 export default Fea;
