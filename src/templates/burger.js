@@ -1,4 +1,3 @@
-
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import ReactDOM from 'react-dom';
 import calculator from '../calculator'
@@ -14,7 +13,7 @@ return(
   buttonColorOpen="orange"
   buttonColorClosed="blue"
   menuBackgroundColor="orange"
-  iconTextWhenOpen="X"
+  iconTextWhenOpen="Close"
 
   iconTextWhenClose="="
 >

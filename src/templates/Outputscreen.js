@@ -1,5 +1,5 @@
 import React from 'react' 
-import Burger from './burger';
+
 var OutputScreen = (props) => { 
   return ( 
     <div>

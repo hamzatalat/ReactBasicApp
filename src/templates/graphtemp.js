@@ -9,6 +9,7 @@ import {
 const Graphtemp = props => (
 	<div>
 	<Burger/>
+  <h1>Simple line graph</h1>
   <ChartProvider
     height={600}
     data={props.data}
